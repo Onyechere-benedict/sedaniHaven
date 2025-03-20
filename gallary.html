@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sedani Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Sedani<span>Haven</span></h1></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="openMenu"></i>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Photo Gallery</h2>
+                <div class="underline"></div>
+                <p>Take a visual tour of our beautiful apartments</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="amenities">Amenities</button>
+                <button class="filter-btn" data-filter="exterior">Exterior</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://placehold.co/800x600/264653/fff?text=Economy+Room" alt="Economy Room">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Economy Room</h3>
+                            <p>Comfortable and affordable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://placehold.co/800x600/2a9d8f/fff?text=Business+Room" alt="Business Room">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Business Room</h3>
+                            <p>Perfect for work and relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://placehold.co/800x600/e76f51/fff?text=First+Class+Room" alt="First Class Room">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>First Class Room</h3>
+                            <p>Luxury and comfort combined</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="amenities">
+                    <img src="https://placehold.co/800x600/e9c46a/fff?text=Kitchen" alt="Kitchen">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Kitchen</h3>
+                            <p>Modern and fully equipped</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="amenities">
+                    <img src="https://placehold.co/800x600/f4a261/fff?text=Bathroom" alt="Bathroom">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Bathroom</h3>
+                            <p>Clean and elegant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="amenities">
+                    <img src="https://placehold.co/800x600/264653/fff?text=Living+Area" alt="Living Area">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Living Area</h3>
+                            <p>Spacious and comfortable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://placehold.co/800x600/2a9d8f/fff?text=Building+Exterior" alt="Building Exterior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Building Exterior</h3>
+                            <p>Modern architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://placehold.co/800x600/e9c46a/fff?text=Garden" alt="Garden">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Garden</h3>
+                            <p>Peaceful and serene</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://placehold.co/800x600/f4a261/fff?text=Entrance" alt="Entrance">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Entrance</h3>
+                            <p>Welcoming and secure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="amenities">
+                    <img src="https://placehold.co/800x600/e76f51/fff?text=Dining+Area" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Dining Area</h3>
+                            <p>Elegant dining space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="amenities">
+                    <img src="https://placehold.co/800x600/264653/fff?text=Work+Space" alt="Work Space">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Work Space</h3>
+                            <p>Productive environment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://placehold.co/800x600/2a9d8f/fff?text=Balcony" alt="Balcony">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Balcony</h3>
+                            <p>Scenic views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Sedani<span>Haven</span></h2>
+                    <p>Your luxury home away from home</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> No 2 Law Ugboaya Parkland Estate, Port Harcourt, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> sedenaltd@yahoo.com</p>
+                    <p><i class="fas fa-phone"></i> +234 XXX XXX XXXX</p>
+                    <a href="https://wa.me/2348000000000" target="_blank" class="whatsapp-footer">
+                        <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Sedani Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348000000000" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery page specific script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            const closeLightbox = document.querySelector('.close-lightbox');
+            
+            // Open lightbox
+            document.querySelectorAll('.gallery-zoom').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const imgSrc = this.getAttribute('data-img');
+                    const caption = this.parentElement.querySelector('h3').textContent;
+                    
+                    lightboxImg.src = imgSrc;
+                    lightboxCaption.textContent = caption;
+                    lightbox.style.display = 'flex';
+                    
+                    // Disable body scroll
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close lightbox
+            closeLightbox.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+                
+                // Enable body scroll
+                document.body.style.overflow = '';
+            });
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                    
+                    // Enable body scroll
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
