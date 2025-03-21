@@ -1,281 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Rooms - Sedani Haven</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Sedani<span>Haven</span></h1>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" id="closeMenu"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="rooms.html" class="active">Rooms</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars" id="openMenu"></i>
-        </div>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Our Rooms - Sedani Haven</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+		<script src="https://js.paystack.co/v2/inline.js" defer></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="logo">
+					<h1>Sedani<span>Haven</span></h1>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" id="closeMenu"></i>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="rooms.html" class="active">Rooms</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" id="openMenu"></i>
+			</div>
+		</nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Rooms</h1>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> / <span>Rooms</span>
-            </div>
-        </div>
-    </section>
+		<!-- Page Header -->
+		<section class="page-header">
+			<div class="container">
+				<h1>Our Rooms</h1>
+				<div class="breadcrumb"><a href="index.html">Home</a> / <span>Rooms</span></div>
+			</div>
+		</section>
 
-    <!-- Rooms Section -->
-    <section class="rooms-page">
-        <div class="container">
-            <div class="section-title">
-                <h2>Accommodation Options</h2>
-                <div class="underline"></div>
-                <p>Choose from our selection of elegantly designed rooms</p>
-            </div>
-            
-            <!-- Economy Room -->
-            <div class="room-detail" id="economy">
-                <div class="room-detail-content">
-                    <div class="room-detail-image">
-                        <img src="/images/EconomyRoom.jpg" alt="Economy Room">
-                        <div class="room-price">₦25,000<span>/night</span></div>
-                    </div>
-                    <div class="room-detail-info">
-                        <h2>Economy Room</h2>
-                        <div class="room-availability">
-                            <span class="available">Room Available</span>
-                        </div>
-                        <p>Our cozy economy room offers essential amenities for a comfortable stay at an affordable price. Perfect for solo travelers or couples looking for quality accommodation without breaking the bank.</p>
-                        <h3>Room Features</h3>
-                        <ul class="room-features-list">
-                            <li><i class="fas fa-bed"></i> Queen Bed</li>
-                            <li><i class="fas fa-bath"></i> Private Bathroom</li>
-                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
-                            <li><i class="fas fa-tv"></i> 32" Smart TV</li>
-                            <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
-                            <li><i class="fas fa-coffee"></i> Tea & Coffee Making Facilities</li>
-                        </ul>
-                        <div class="room-actions">
-                            <button class="btn-book" data-room="Economy Room" data-price="25000">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Business Room -->
-            <div class="room-detail" id="business">
-                <div class="room-detail-content">
-                    <div class="room-detail-image">
-                        <img src="/images/bussinessClass.jpg" alt="Business Room">
-                        <div class="room-price">₦30,000<span>/night</span></div>
-                    </div>
-                    <div class="room-detail-info">
-                        <h2>Business Room</h2>
-                        <div class="room-availability">
-                            <span class="available">Rooms Available</span>
-                        </div>
-                        <p>Perfect for business travelers, this room features a work desk and enhanced amenities for productivity and comfort. Enjoy a spacious environment designed to meet both your work and relaxation needs.</p>
-                        <h3>Room Features</h3>
-                        <ul class="room-features-list">
-                            <li><i class="fas fa-bed"></i> King Bed</li>
-                            <li><i class="fas fa-bath"></i> Ensuite Bathroom</li>
-                            <li><i class="fas fa-wifi"></i> High-Speed WiFi</li>
-                            <li><i class="fas fa-tv"></i> 43" Smart TV</li>
-                            <li><i class="fas fa-desk"></i> Work Desk</li>
-                            <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
-                            <li><i class="fas fa-coffee"></i> Premium Coffee Machine</li>
-                            <li><i class="fas fa-concierge-bell"></i> Room Service</li>
-                        </ul>
-                        <div class="room-actions">
-                            <button class="btn-book" data-room="Business Room" data-price="30000">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- First Class Room -->
-            <div class="room-detail" id="firstclass">
-                <div class="room-detail-content">
-                    <div class="room-detail-image">
-                        <img src="/images/firstClass.jpg" alt="First Class Room">
-                        <div class="room-price">₦40,000<span>/night</span></div>
-                    </div>
-                    <div class="room-detail-info">
-                        <h2>First Class Room</h2>
-                        <div class="room-availability">
-                            <span class="available">2 Rooms Available</span>
-                        </div>
-                        <p>Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the height of comfort and luxury in our most exclusive accommodation option.</p>
-                        <h3>Room Features</h3>
-                        <ul class="room-features-list">
-                            <li><i class="fas fa-bed"></i> King Bed</li>
-                            <li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
-                            <li><i class="fas fa-wifi"></i> Premium WiFi</li>
-                            <li><i class="fas fa-tv"></i> 55" Smart TV</li>
-                            <li><i class="fas fa-couch"></i> Separate Seating Area</li>
-                            <li><i class="fas fa-coffee"></i> Mini Kitchen</li>
-                            <li><i class="fas fa-snowflake"></i> Climate Control</li>
-                            <li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
-                            <li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
-                            <li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
-                        </ul>
-                        <div class="room-actions">
-                            <button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<!-- Rooms Section -->
+		<section class="rooms-page">
+			<div class="container">
+				<div class="section-title">
+					<h2>Accommodation Options</h2>
+					<div class="underline"></div>
+					<p>Choose from our selection of elegantly designed rooms</p>
+				</div>
 
-            <!-- 2 bedroom  -->
-             <div class="room-detail" id="firstclass">
-                <div class="room-detail-content">
-                    <div class="room-detail-image">
-                        <img src="/images/2bedroom.jpg" alt="First Class Room">
-                        <div class="room-price">₦110,000<span>/night</span></div>
-                    </div>
-                    <div class="room-detail-info">
-                        <h2>2 bedroom</h2>
-                        <div class="room-availability">
-                            <span class="available">2 Rooms Available</span>
-                        </div>
-                        <p>Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the height of comfort and luxury in our most exclusive accommodation option.</p>
-                        <h3>Room Features</h3>
-                        <ul class="room-features-list">
-                            <li><i class="fas fa-bed"></i> King Bed</li>
-                            <li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
-                            <li><i class="fas fa-wifi"></i> Premium WiFi</li>
-                            <li><i class="fas fa-tv"></i> 55" Smart TV</li>
-                            <li><i class="fas fa-couch"></i> Separate Seating Area</li>
-                            <li><i class="fas fa-coffee"></i> Mini Kitchen</li>
-                            <li><i class="fas fa-snowflake"></i> Climate Control</li>
-                            <li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
-                            <li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
-                            <li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
-                        </ul>
-                        <div class="room-actions">
-                            <button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+				<!-- Economy Room -->
+				<div class="room-detail" id="economy">
+					<div class="room-detail-content">
+						<div class="room-detail-image">
+							<img src="/images/EconomyRoom.jpg" alt="Economy Room" />
+							<div class="room-price">₦25,000<span>/night</span></div>
+						</div>
+						<div class="room-detail-info">
+							<h2>Economy Room</h2>
+							<div class="room-availability">
+								<span class="available">Room Available</span>
+							</div>
+							<p>
+								Our cozy economy room offers essential amenities for a comfortable stay at an affordable price. Perfect for solo travelers or
+								couples looking for quality accommodation without breaking the bank.
+							</p>
+							<h3>Room Features</h3>
+							<ul class="room-features-list">
+								<li><i class="fas fa-bed"></i> Queen Bed</li>
+								<li><i class="fas fa-bath"></i> Private Bathroom</li>
+								<li><i class="fas fa-wifi"></i> Free WiFi</li>
+								<li><i class="fas fa-tv"></i> 32" Smart TV</li>
+								<li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+								<li><i class="fas fa-coffee"></i> Tea & Coffee Making Facilities</li>
+							</ul>
+							<div class="room-actions">
+								<button class="btn-book" data-room="Economy Room" data-price="25000">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<!-- Business Room -->
+				<div class="room-detail" id="business">
+					<div class="room-detail-content">
+						<div class="room-detail-image">
+							<img src="/images/bussinessClass.jpg" alt="Business Room" />
+							<div class="room-price">₦30,000<span>/night</span></div>
+						</div>
+						<div class="room-detail-info">
+							<h2>Business Room</h2>
+							<div class="room-availability">
+								<span class="available">Rooms Available</span>
+							</div>
+							<p>
+								Perfect for business travelers, this room features a work desk and enhanced amenities for productivity and comfort. Enjoy a
+								spacious environment designed to meet both your work and relaxation needs.
+							</p>
+							<h3>Room Features</h3>
+							<ul class="room-features-list">
+								<li><i class="fas fa-bed"></i> King Bed</li>
+								<li><i class="fas fa-bath"></i> Ensuite Bathroom</li>
+								<li><i class="fas fa-wifi"></i> High-Speed WiFi</li>
+								<li><i class="fas fa-tv"></i> 43" Smart TV</li>
+								<li><i class="fas fa-desk"></i> Work Desk</li>
+								<li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+								<li><i class="fas fa-coffee"></i> Premium Coffee Machine</li>
+								<li><i class="fas fa-concierge-bell"></i> Room Service</li>
+							</ul>
+							<div class="room-actions">
+								<button class="btn-book" data-room="Business Room" data-price="30000">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-            <!-- 3 bedroom duplex -->
-              <div class="room-detail" id="firstclass">
-                <div class="room-detail-content">
-                    <div class="room-detail-image">
-                        <img src="/images/duplex.jpg" alt="Three Bedroom duplex">
-                        <div class="room-price">₦150,000<span>/night</span></div>
-                    </div>
-                    <div class="room-detail-info">
-                        <h2>3 bedroom</h2>
-                        <div class="room-availability">
-                            <span class="available">3 Rooms Available</span>
-                        </div>
-                        <p>Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the height of comfort and luxury in our most exclusive accommodation option.</p>
-                        <h3>Room Features</h3>
-                        <ul class="room-features-list">
-                            <li><i class="fas fa-bed"></i> King Bed</li>
-                            <li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
-                            <li><i class="fas fa-wifi"></i> Premium WiFi</li>
-                            <li><i class="fas fa-tv"></i> 55" Smart TV</li>
-                            <li><i class="fas fa-couch"></i> Separate Seating Area</li>
-                            <li><i class="fas fa-coffee"></i> Mini Kitchen</li>
-                            <li><i class="fas fa-snowflake"></i> Climate Control</li>
-                            <li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
-                            <li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
-                            <li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
-                        </ul>
-                        <div class="room-actions">
-                            <button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- First Class Room -->
+				<div class="room-detail" id="firstclass">
+					<div class="room-detail-content">
+						<div class="room-detail-image">
+							<img src="/images/firstClass.jpg" alt="First Class Room" />
+							<div class="room-price">₦40,000<span>/night</span></div>
+						</div>
+						<div class="room-detail-info">
+							<h2>First Class Room</h2>
+							<div class="room-availability">
+								<span class="available">2 Rooms Available</span>
+							</div>
+							<p>
+								Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the
+								height of comfort and luxury in our most exclusive accommodation option.
+							</p>
+							<h3>Room Features</h3>
+							<ul class="room-features-list">
+								<li><i class="fas fa-bed"></i> King Bed</li>
+								<li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
+								<li><i class="fas fa-wifi"></i> Premium WiFi</li>
+								<li><i class="fas fa-tv"></i> 55" Smart TV</li>
+								<li><i class="fas fa-couch"></i> Separate Seating Area</li>
+								<li><i class="fas fa-coffee"></i> Mini Kitchen</li>
+								<li><i class="fas fa-snowflake"></i> Climate Control</li>
+								<li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
+								<li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
+								<li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
+							</ul>
+							<div class="room-actions">
+								<button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- Booking Modal -->
-    <div id="bookingModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Booking Summary</h2>
-            <div id="bookingSummary"></div>
-            <div class="payment-options">
-                <h3>Payment Options</h3>
-                <div class="payment-methods">
-                    <button id="payWithCard" class="payment-btn">
-                        <i class="fas fa-credit-card"></i> Pay with Card
-                    </button>
-                    <button id="payWithTransfer" class="payment-btn">
-                        <i class="fas fa-university"></i> Bank Transfer
-                    </button>
-                    <a href="https://wa.me/2348029802129" target="_blank" class="payment-btn whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Pay via WhatsApp
-                    </a>
-                </div>
-            </div>
-            <div class="modal-actions">
-                <button id="confirmBooking" class="btn-primary">Confirm Booking</button>
-                <button id="cancelBooking" class="btn-secondary">Cancel</button>
-            </div>
-        </div>
-    </div>
+				<!-- 2 bedroom  -->
+				<div class="room-detail" id="firstclass">
+					<div class="room-detail-content">
+						<div class="room-detail-image">
+							<img src="/images/2bedroom.jpg" alt="First Class Room" />
+							<div class="room-price">₦110,000<span>/night</span></div>
+						</div>
+						<div class="room-detail-info">
+							<h2>2 bedroom</h2>
+							<div class="room-availability">
+								<span class="available">2 Rooms Available</span>
+							</div>
+							<p>
+								Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the
+								height of comfort and luxury in our most exclusive accommodation option.
+							</p>
+							<h3>Room Features</h3>
+							<ul class="room-features-list">
+								<li><i class="fas fa-bed"></i> King Bed</li>
+								<li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
+								<li><i class="fas fa-wifi"></i> Premium WiFi</li>
+								<li><i class="fas fa-tv"></i> 55" Smart TV</li>
+								<li><i class="fas fa-couch"></i> Separate Seating Area</li>
+								<li><i class="fas fa-coffee"></i> Mini Kitchen</li>
+								<li><i class="fas fa-snowflake"></i> Climate Control</li>
+								<li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
+								<li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
+								<li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
+							</ul>
+							<div class="room-actions">
+								<button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Sedani<span>Haven</span></h2>
-                    <p>Your luxury home away from home</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="rooms.html">Rooms</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> No 2 Law Ugboaya Parkland Estate, Port Harcourt, Nigeria</p>
-                    <p><i class="fas fa-envelope"></i> sedenaltd@yahoo.com</p>
-                    <p><i class="fas fa-phone"></i> +234 802 980 2129</p>
-                    <a href="https://wa.me/2348029802129" target="_blank" class="whatsapp-footer">
-                        <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year">2025</span> Sedani Haven. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+				<!-- 3 bedroom duplex -->
+				<div class="room-detail" id="firstclass">
+					<div class="room-detail-content">
+						<div class="room-detail-image">
+							<img src="/images/duplex.jpg" alt="Three Bedroom duplex" />
+							<div class="room-price">₦150,000<span>/night</span></div>
+						</div>
+						<div class="room-detail-info">
+							<h2>3 bedroom</h2>
+							<div class="room-availability">
+								<span class="available">3 Rooms Available</span>
+							</div>
+							<p>
+								Our premium offering with luxurious furnishings, extra space, and premium amenities for an exceptional stay. Experience the
+								height of comfort and luxury in our most exclusive accommodation option.
+							</p>
+							<h3>Room Features</h3>
+							<ul class="room-features-list">
+								<li><i class="fas fa-bed"></i> King Bed</li>
+								<li><i class="fas fa-bath"></i> Luxury Bathroom with Jacuzzi</li>
+								<li><i class="fas fa-wifi"></i> Premium WiFi</li>
+								<li><i class="fas fa-tv"></i> 55" Smart TV</li>
+								<li><i class="fas fa-couch"></i> Separate Seating Area</li>
+								<li><i class="fas fa-coffee"></i> Mini Kitchen</li>
+								<li><i class="fas fa-snowflake"></i> Climate Control</li>
+								<li><i class="fas fa-concierge-bell"></i> 24/7 Room Service</li>
+								<li><i class="fas fa-glass-cheers"></i> Complimentary Welcome Drink</li>
+								<li><i class="fas fa-shuttle-van"></i> Airport Pickup (on request)</li>
+							</ul>
+							<div class="room-actions">
+								<button class="btn-book" data-room="First Class Room" data-price="40000">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2348029802129" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+		<!-- Booking Modal -->
+		<div id="bookingModal" class="modal">
+			<div class="modal-content">
+				<span class="close-modal">&times;</span>
+				<h2>Booking Summary</h2>
+				<div id="bookingSummary"></div>
+				<div class="payment-options">
+					<h3>Payment Options</h3>
+					<div class="payment-methods">
+						<button id="payWithCard" class="payment-btn"><i class="fas fa-credit-card"></i> Pay with Card</button>
+						<button id="payWithTransfer" class="payment-btn"><i class="fas fa-university"></i> Bank Transfer</button>
+						<a href="https://wa.me/2348029802129" target="_blank" class="payment-btn whatsapp-btn">
+							<i class="fab fa-whatsapp"></i> Pay via WhatsApp
+						</a>
+					</div>
+				</div>
+				<div class="modal-actions">
+					<button id="confirmBooking" class="btn-primary">Confirm Booking</button>
+					<button id="cancelBooking" class="btn-secondary">Cancel</button>
+				</div>
+			</div>
+		</div>
 
-    <script src="script.js"></script>
-</body>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-logo">
+						<h2>Sedani<span>Haven</span></h2>
+						<p>Your luxury home away from home</p>
+					</div>
+					<div class="footer-links">
+						<h3>Quick Links</h3>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="rooms.html">Rooms</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-contact">
+						<h3>Contact Us</h3>
+						<p><i class="fas fa-map-marker-alt"></i> No 2 Law Ugboaya Parkland Estate, Port Harcourt, Nigeria</p>
+						<p><i class="fas fa-envelope"></i> sedenaltd@yahoo.com</p>
+						<p><i class="fas fa-phone"></i> +234 802 980 2129</p>
+						<a href="https://wa.me/2348029802129" target="_blank" class="whatsapp-footer">
+							<i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+						</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; <span id="current-year">2025</span> Sedani Haven. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- WhatsApp Floating Button -->
+		<a href="https://wa.me/2348029802129" target="_blank" class="whatsapp-float">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+
+		<script src="script.js"></script>
+	</body>
 </html>

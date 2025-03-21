@@ -1347,6 +1347,12 @@ img {
     animation: pulse 1s infinite;
 }
 
+@media (min-width: 768px){
+    #closeMenu, #openMenu{
+        display: none;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .about-content,
